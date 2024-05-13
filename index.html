@@ -4,9 +4,115 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+        <link rel="stylesheet" href="style.css" />
         <title>Frontend Mentor | Crowdfunding product page</title>
+        <!--Google font-->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Commissioner:wght@100..900&display=swap" rel="stylesheet" />
     </head>
     <body>
-        <h1>hello world</h1>
+        <header class="page-top-header">
+            <div class="page-top-header__page-menu">
+                <div class="page-top-header__logo-container">
+                    <img class="page-top-header__logo" src="images/logo.svg" alt="crowdfund logo" />
+                </div>
+                <div class="page-top-header__menu-icon-container">
+                    <img class="page-top-header__menu-icon" src="images/icon-hamburger.svg" alt="menu icon" />
+                </div>
+            </div>
+            <!-- mobile menu -->
+            <div class="mobile-menu-wrapper">
+                <div class="mobile-menu">
+                    <ul class="mobile-menu__list">
+                        <li class="mobile-menu__item">About</li>
+                        <li class="mobile-menu__item">Discover</li>
+                        <li class="mobile-menu__item">Get Started</li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+        <section class="section-card intro-card">
+            <div class="intro-card__wrapper">
+                <div class="intro-card__logo-container">
+                    <img class="intro-card__logo" src="images/logo-mastercraft.svg" alt="Mastercraft Bamboo logo" />
+                </div>
+                <h1 class="intro-card__title">Mastercraft Bamboo Monitor Riser</h1>
+                <p class="intro-card__description">A beautifully handcrafted monitor stand to reduce neck and eye strain.</p>
+                <div class="intro-card__btn-container">
+                    <button class="btn-primary">Back this project</button>
+                    <button class="btn-bookmark">
+                        <svg width="56" height="56" xmlns="http://www.w3.org/2000/svg">
+                            <path class="btn-bookmark__svg" fill="#B1B1B1" d="M23 19v18l5-5.058L33 37V19z" fill-rule="evenodd" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </section>
+        <section class="section-card stats-card">
+            <div class="stats-card__stat-wrapper">
+                <h2 class="stats-card__number">$89,914</h2>
+                <p class="stats-card__description">of $100,000 backed</p>
+            </div>
+            <div class="stats-card__stat-wrapper">
+                <h2 class="stats-card__number">5,007</h2>
+                <p class="stats-card__description">total backers</p>
+            </div>
+            <div class="stats-card__stat-wrapper">
+                <h2 class="stats-card__number">56</h2>
+                <p class="stats-card__description">days left</p>
+                <div class="stats-card__progress-bar-container">
+                    <div class="stats-card__progress-bar"></div>
+                </div>
+            </div>
+        </section>
+        <section class="section-card about-card">
+            <h3 class="about-card__title">About this project</h3>
+            <p class="about-card__intro">
+                The Mastercraft Bamboo Monitor Riser is a sturdy and stylish platform that elevates your screen to a more comfortable viewing height. Placing
+                your monitor at eye level has the potential to improve your posture and make you more comfortable while at work, helping you stay focused on the
+                task at hand. <br /><br />
+                Featuring artisan craftsmanship, the simplicity of design creates extra desk space below your computer to allow notepads, pens, and USB sticks
+                to be stored under the stand.
+            </p>
+            <div class="adds-card">
+                <h4 class="adds-card__title">Bamboo Stand</h4>
+                <h5 class="adds-card__subtitle">Pledge $25 or more</h5>
+                <p class="adds-card__text">
+                    You get an ergonomic stand made of natural bamboo. You've helped us launch our promotional campaign, and you’ll be added to a special Backer
+                    member list.
+                </p>
+                <div class="adds-card__product-counter">
+                    <p class="adds-card__number">101</p>
+                    <p class="adds-card__products-left">left</p>
+                </div>
+                <button class="btn-primary btn-primary--small">Select Reward</button>
+            </div>
+            <div class="adds-card">
+                <h4 class="adds-card__title">Black Edition Stand</h4>
+                <h5 class="adds-card__subtitle">Pledge $75 or more</h5>
+                <p class="adds-card__text">
+                    You get a Black Special Edition computer stand and a personal thank you. You’ll be added to our Backer member list. Shipping is included.
+                </p>
+                <div class="adds-card__product-counter">
+                    <p class="adds-card__number">64</p>
+                    <p class="adds-card__products-left">left</p>
+                </div>
+                <button class="btn-primary btn-primary--small">Select Reward</button>
+            </div>
+            <div class="adds-card">
+                <h4 class="adds-card__title">Mahogany Special Edition</h4>
+                <h5 class="adds-card__subtitle">Pledge $200 or more</h5>
+                <p class="adds-card__text">
+                    You get two Special Edition Mahogany stands, a Backer T-Shirt, and a personal thank you. You’ll be added to our Backer member list. Shipping
+                    is included.
+                </p>
+                <div class="adds-card__product-counter">
+                    <p class="adds-card__number">0</p>
+                    <p class="adds-card__products-left">left</p>
+                </div>
+                <button class="btn-primary btn-primary--small">Out of Stock</button>
+            </div>
+        </section>
     </body>
 </html>

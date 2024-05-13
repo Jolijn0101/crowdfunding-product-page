@@ -1,0 +1,240 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Commissioner', sans-serif;
+}
+
+:root {
+    --Moderate-cyan: hsl(176, 50%, 47%);
+    --Dark-cyan: hsl(176, 72%, 28%);
+    --Black: hsl(0, 0%, 0%);
+    --Dark-gray: hsl(0, 0%, 48%);
+    --Light-gray: hsl(0, 0%, 95%);
+}
+
+p {
+    color: var(--Dark-gray);
+    font-size: 0.875rem;
+}
+
+/*** Buttons ***/
+.btn-primary {
+    cursor: pointer;
+    padding: 18px 45px;
+    background-color: var(--Moderate-cyan);
+    color: #ffffff;
+    font-size: 1rem;
+    font-family: 'Commissioner', sans-serif;
+    font-weight: 700;
+    border: none;
+    border-radius: 2rem;
+    transition: 0.2s;
+}
+
+.btn-primary--small {
+    font-size: 14px;
+    padding: 15px 33px;
+}
+
+.btn-primary:hover {
+    background-color: var(--Dark-cyan);
+}
+
+.btn-bookmark {
+    cursor: pointer;
+    height: 56px;
+    background-color: #2f2f2fff;
+    border-radius: 50%;
+    border: none;
+}
+.btn-bookmark__svg--checked {
+    fill: #ffffff;
+}
+.btn-bookmark--checked {
+    background-color: var(--Moderate-cyan);
+}
+
+/*** page top header ***/
+.page-top-header {
+    height: 18.75rem;
+    background-image: url('images/image-hero-mobile.jpg');
+    background-size: cover;
+}
+
+.page-top-header__page-menu {
+    position: absolute;
+    padding: 2rem 1.5rem 0rem 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    z-index: 200;
+}
+
+.mobile-menu-wrapper {
+    width: 100vw;
+    height: 100vh;
+    background-color: blue;
+    z-index: 100;
+    position: absolute;
+    overflow: hidden;
+    opacity: 0.5;
+}
+
+/*** section card ***/
+.section-card {
+    width: calc(100% - 3rem);
+    margin: auto;
+    background-color: #ffffff;
+    border-radius: 0.5rem;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+/*** intro card ***/
+.intro-card {
+    transform: translateY(-3.5rem);
+    text-align: center;
+}
+
+.intro-card__wrapper {
+    transform: translateY(-1.8125rem);
+}
+
+.intro-card__logo-container {
+    width: 56px;
+    margin: 0rem auto 1.3125rem auto;
+}
+
+.intro-card__title {
+    font-size: 1.25rem;
+    margin: 0rem auto 1rem auto;
+    width: 60%;
+}
+
+.intro-card__description {
+    font-size: 0.875rem;
+    line-height: 1.5rem;
+    width: 80%;
+    margin: 0rem auto 1.5rem auto;
+}
+
+.intro-card__btn-container {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    width: fit-content;
+    margin: auto;
+    padding-bottom: 0.5rem;
+}
+
+/*** stats card ***/
+.stats-card {
+    text-align: center;
+    margin-top: -1.8125rem;
+}
+.stats-card__number {
+    font-size: 2rem;
+}
+.stats-card__number {
+    padding-bottom: 0.5rem;
+}
+.stats-card__stat-wrapper {
+    padding-top: 1.5rem;
+}
+.stats-card__stat-wrapper:first-of-type {
+    padding-top: 2rem;
+}
+
+.stats-card__description {
+    font-size: 14px;
+    padding-bottom: 1.5625rem;
+}
+.stats-card__stat-wrapper:last-of-type {
+    padding-bottom: 2.5rem;
+}
+.stats-card__stat-wrapper:after {
+    content: '';
+    display: block;
+    margin: 0 auto;
+    width: 30%;
+    border-bottom: 1px solid var(--Dark-gray);
+}
+.stats-card__stat-wrapper:last-of-type:after {
+    display: none;
+}
+.stats-card__progress-bar-container {
+    width: 86%;
+    margin: 0.625rem auto 0rem auto;
+}
+.stats-card__progress-bar {
+    width: 100%;
+    height: 12px;
+    border-radius: 1rem;
+    background-color: var(--Light-gray);
+}
+.stats-card__progress-bar:before {
+    content: '';
+    display: block;
+    width: 77%;
+    height: 12px;
+    border-radius: 1rem;
+    background-color: var(--Moderate-cyan);
+}
+
+/*** about card ***/
+.about-card {
+    margin: 1.5rem auto 77px auto;
+    padding: 2.5rem 1.5rem;
+}
+
+.about-card__title {
+    font-size: 1.125rem;
+    margin-bottom: 1.6875rem;
+}
+
+.about-card__intro {
+    line-height: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+/* adds card */
+.adds-card {
+    background-color: #ffffff;
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    border: 1px solid var(--Light-gray);
+    margin-bottom: 1.5rem;
+}
+.adds-card:last-of-type {
+    margin-bottom: 0rem;
+    opacity: 0.5;
+}
+
+.adds-card__title {
+    font-size: 14px;
+    margin-bottom: 8px;
+}
+
+.adds-card__subtitle {
+    color: var(--Dark-cyan);
+    font-size: 14px;
+    font-weight: 400;
+    margin-bottom: 26px;
+}
+
+.adds-card__text {
+    line-height: 24px;
+    margin-bottom: 22px;
+}
+
+.adds-card__product-counter {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+
+.adds-card__number {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--Black);
+    margin-right: 8px;
+}
