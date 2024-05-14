@@ -9,29 +9,38 @@
         <!--Google font-->
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <!-- css stylesheet -->
         <link href="https://fonts.googleapis.com/css2?family=Commissioner:wght@100..900&display=swap" rel="stylesheet" />
+        <!-- js script-->
+        <script src="script.js" defer></script>
     </head>
     <body>
         <header class="page-top-header">
-            <div class="page-top-header__page-menu">
+            <div class="page-top-header__wrapper">
                 <div class="page-top-header__logo-container">
                     <img class="page-top-header__logo" src="images/logo.svg" alt="crowdfund logo" />
                 </div>
+                <!-- mobile menu icon -->
                 <div class="page-top-header__menu-icon-container">
-                    <img class="page-top-header__menu-icon" src="images/icon-hamburger.svg" alt="menu icon" />
-                </div>
-            </div>
-            <!-- mobile menu -->
-            <div class="mobile-menu-wrapper">
-                <div class="mobile-menu">
-                    <ul class="mobile-menu__list">
-                        <li class="mobile-menu__item">About</li>
-                        <li class="mobile-menu__item">Discover</li>
-                        <li class="mobile-menu__item">Get Started</li>
-                    </ul>
+                    <div class="menu-icon">
+                        <span class="menu-icon__line" id="menu-icon__line-1"></span>
+                        <span class="menu-icon__line" id="menu-icon__line-2"></span>
+                        <span class="menu-icon__line" id="menu-icon__line-3"></span>
+                    </div>
                 </div>
             </div>
         </header>
+
+        <!-- mobile menu -->
+        <div class="mobile-menu">
+            <ul class="mobile-menu__card">
+                <li class="mobile-menu__item">About</li>
+                <li class="mobile-menu__item">Discover</li>
+                <li class="mobile-menu__item">Get Started</li>
+            </ul>
+        </div>
+
+        <img class="hero-img" src="images/image-hero-mobile.jpg" alt="" />
         <section class="section-card intro-card">
             <div class="intro-card__wrapper">
                 <div class="intro-card__logo-container">
@@ -114,5 +123,8 @@
                 <button class="btn-primary btn-primary--small">Out of Stock</button>
             </div>
         </section>
+        <script>
+
+        </script>
     </body>
 </html>
