@@ -1,0 +1,194 @@
+/** mobile menu **/
+.mobile-menu {
+    position: fixed;
+    width: 100vw;
+    height: 0;
+    overflow: hidden;
+    z-index: 100;
+    background: rgb(0, 0, 0);
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.775) 0%, rgba(0, 0, 0, 0) 70%);
+    transition: 0.5s;
+}
+
+.mobile-menu--open {
+    height: 100vh;
+}
+
+.mobile-menu__card {
+    background-color: #ffffff;
+    width: fit-content;
+    margin: 5.5rem auto 0rem auto;
+    width: calc(100% - 3rem);
+    border-radius: 0.5rem;
+    list-style: none;
+    overflow: hidden;
+    height: 0;
+    transition: 0.5s;
+}
+
+.mobile-menu__card--open {
+    height: 212px;
+}
+
+.mobile-menu__item {
+    padding: 1.5rem 1.5rem;
+    border-bottom: 1px solid var(--Light-gray);
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.mobile-menu__item:last-of-type {
+    border-bottom: none;
+}
+
+/***** general styles back this project and Thanks for your support *****/
+.menu-card {
+    background: rgba(0, 0, 0, 0.5);
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    overflow: scroll;
+    z-index: 300;
+    padding-bottom: 250px;
+    display: none;
+}
+.menu-card__card {
+    transform: translateY(120px);
+    width: calc(100% - 3rem);
+    padding: 2rem 1.5rem 1rem 1.5rem;
+    background-color: #ffffff;
+    margin: auto;
+    border-radius: 0.5rem;
+    border: 1px solid var(--Light-gray);
+    position: relative;
+}
+
+/*** back this project ***/
+.back-project__close-icon {
+    position: absolute;
+    right: 22px;
+    top: 35px;
+}
+.back-project__title {
+    font-size: 18px;
+    margin-bottom: 26px;
+}
+.back-project__intro {
+    line-height: 23px;
+    margin-bottom: 1.5rem;
+}
+.pledge-card {
+    border: 1px solid #d8d8d8;
+    border-radius: 0.5rem;
+    padding-bottom: 32px;
+    margin-bottom: 20px;
+}
+.pledge-card__header {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 35px;
+    padding: 32px 22px 0 22px;
+}
+.page-top-header--min-height {
+    margin-top: -10px;
+}
+.pledge-card__radio-btn {
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 50%;
+    border: 1px solid #d8d8d8;
+}
+.pledge-card__radio-btn--selected:before {
+    content: '';
+    display: block;
+    width: 12px;
+    height: 12px;
+    background-color: var(--Moderate-cyan);
+    border-radius: 50%;
+    transform: translate(5px, 5px);
+}
+.pledge-card__title {
+    font-size: 14px;
+}
+.pledge-card__subtitle {
+    font-weight: 400;
+    color: var(--Moderate-cyan);
+    font-size: 14px;
+    margin-top: 8px;
+}
+.pledge-card__description {
+    line-height: 24px;
+    padding: 0 22px;
+}
+.pledge-card__product-counter {
+    display: flex;
+    gap: 8px;
+    margin-top: 1.5rem;
+    align-items: center;
+    padding: 0 22px;
+}
+.pledge-card__number {
+    font-weight: 700;
+    color: var(--Black);
+    font-size: 16px;
+}
+.pledge-card--sold-out {
+    opacity: 0.5;
+}
+/* confirm */
+.confirm {
+    text-align: center;
+    height: 0;
+    overflow: hidden;
+    transition: 0.5s;
+}
+.confirm__hr {
+    margin: 1.5rem 0;
+    border-width: 2px;
+    border-color: var(--Light-gray);
+    opacity: 0.2;
+}
+.confirm__title {
+    margin-bottom: 1.5rem;
+}
+.confirm__action-box {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+.confirm__input-num-container {
+    display: flex;
+    align-items: center;
+    padding: 18px 1.5rem;
+    border-radius: 2rem;
+    border: 1px solid rgb(172, 172, 172);
+}
+.confirm__input-num {
+    border: none;
+    outline: none;
+    font-family: 'Commissioner', sans-serif;
+    font-weight: 700;
+    width: 50px;
+    padding-left: 0.5rem;
+}
+.confirm__dollar-sign {
+    font-weight: 700;
+    font-family: 'Commissioner', sans-serif;
+    color: rgb(172, 172, 172);
+}
+
+/*** Thanks for your support ***/
+.thank-you-message__card {
+    text-align: center;
+}
+.thank-you-message__title {
+    margin: 1rem 0 1.5rem 0;
+    font-size: 18px;
+}
+.thank-you-message__description {
+    line-height: 25px;
+}
+.thank-you-message__btn {
+    margin: 1.5rem 0;
+}

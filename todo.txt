@@ -1,2 +1,15 @@
+styling alle mobile typen
+
+ipad
+
+desktop 
+
+grote schermen
+
+
 alle rems zonder halve px??
 px naar rems zetten
+
+
+zorg dat alle pledges berekent worden
+
