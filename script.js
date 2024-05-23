@@ -54,7 +54,14 @@ function addPledge(card) {
         card.classList.add('pledge-card--selected');
         card.style.borderColor = 'hsl(176, 50%, 47%)';
         document.querySelector('#pledge-card__radio-btn' + idNum).classList.add('pledge-card__radio-btn--selected');
-        document.querySelector('#confirm' + idNum).style.height = '148px';
+        // Create a MediaQueryList object
+        let screen = window.matchMedia('(max-width: 380px)');
+        if (screen.matches) {
+            // If media query matches
+            document.querySelector('#confirm' + idNum).style.height = '215px';
+        } else {
+            document.querySelector('#confirm' + idNum).style.height = '148px';
+        }
     };
 }
 
@@ -98,7 +105,13 @@ selectButtons.forEach((selectBtn) => {
         card.classList.add('pledge-card--selected');
         card.style.borderColor = 'hsl(176, 50%, 47%)';
         document.querySelector('#pledge-card__radio-btn' + card.id.slice(-1)).classList.add('pledge-card__radio-btn--selected');
-        document.querySelector('#confirm' + card.id.slice(-1)).style.height = '148px';
+        let screen = window.matchMedia('(max-width: 340px)');
+        if (screen.matches) {
+            // If media query matches
+            document.querySelector('#confirm' + card.id.slice(-1)).style.height = '215px';
+        } else {
+            document.querySelector('#confirm' + card.id.slice(-1)).style.height = '148px';
+        }
     };
 });
 

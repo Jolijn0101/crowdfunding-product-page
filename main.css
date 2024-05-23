@@ -163,6 +163,12 @@ p {
     padding-bottom: 0.5rem;
 }
 
+@media (max-width: 365px) {
+    .BackProjectBtn {
+        padding: 18px 25px;
+    }
+}
+
 /*** stats card ***/
 .stats-card {
     text-align: center;
