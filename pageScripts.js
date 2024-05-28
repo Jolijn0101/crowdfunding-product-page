@@ -1,3 +1,8 @@
+// page wrapper function
+function pageWrapperFunction() {
+    document.querySelector('.page-wrapper').classList.toggle('page-wrapper--no-scroll');
+}
+
 // mobile menu function
 const menuIcon = document.querySelector('.menu-icon');
 const mobileMenu = document.querySelector('.mobile-menu');
@@ -14,6 +19,15 @@ const bookmarkIcon = document.querySelector('.btn-bookmark');
 bookmarkIcon.onclick = () => {
     bookmarkIcon.classList.toggle('btn-bookmark--checked');
     document.querySelector('.btn-bookmark__svg').classList.toggle('btn-bookmark__svg--checked');
+
+    const bookmarkLabel = document.querySelector('.btn-bookmark__label');
+    if (bookmarkIcon.classList.contains('btn-bookmark--checked')) {
+        bookmarkLabel.style.color = 'var(--Dark-cyan)';
+        bookmarkLabel.innerHTML = 'Bookmarked';
+    } else {
+        bookmarkLabel.style.color = 'var(--Dark-gray)';
+        bookmarkLabel.innerHTML = 'Bookmark';
+    }
 };
 
 // pledge-card function
@@ -27,6 +41,11 @@ function addPledge(card) {
 
         // if the product is out of stock exit function
         if (card.classList.contains('pledge-card--sold-out')) {
+            return;
+        }
+
+        // if the input for the pledge amount was clicked, exit function
+        if (e.target.classList.contains('confirm__input-num') || e.target.classList.contains('confirm__input-num-container')) {
             return;
         }
 
@@ -55,12 +74,12 @@ function addPledge(card) {
         card.style.borderColor = 'hsl(176, 50%, 47%)';
         document.querySelector('#pledge-card__radio-btn' + idNum).classList.add('pledge-card__radio-btn--selected');
         // Create a MediaQueryList object
-        let screen = window.matchMedia('(max-width: 380px)');
+        let screen = window.matchMedia('(max-width: 1439px)');
         if (screen.matches) {
             // If media query matches
-            document.querySelector('#confirm' + idNum).style.height = '215px';
+            document.querySelector('#confirm' + idNum).style.height = '150px';
         } else {
-            document.querySelector('#confirm' + idNum).style.height = '148px';
+            document.querySelector('#confirm' + idNum).style.height = '108px';
         }
     };
 }
@@ -69,6 +88,8 @@ function addPledge(card) {
 const OpenBackProjectBtn = document.querySelector('.BackProjectBtn');
 OpenBackProjectBtn.onclick = () => {
     document.querySelector('.back-project').style.display = 'block';
+    // add no scroll too homepage
+    pageWrapperFunction();
 };
 
 // close Back this project
@@ -82,12 +103,16 @@ CloseBackProjectBtn.onclick = () => {
         document.querySelector('#pledge-card__radio-btn' + card.id.slice(-1)).classList.remove('pledge-card__radio-btn--selected');
         document.querySelector('#confirm' + card.id.slice(-1)).style.height = '0px';
     });
+    // remove no scroll from homepage
+    pageWrapperFunction();
 };
 
 // close thank you for your support
 const CloseThanksSupport = document.querySelector('.thank-you-message__btn');
 CloseThanksSupport.onclick = () => {
     document.querySelector('.thank-you-message').style.display = 'none';
+    // remove no scroll from homepage
+    pageWrapperFunction();
 };
 
 // select reward function
@@ -105,23 +130,15 @@ selectButtons.forEach((selectBtn) => {
         card.classList.add('pledge-card--selected');
         card.style.borderColor = 'hsl(176, 50%, 47%)';
         document.querySelector('#pledge-card__radio-btn' + card.id.slice(-1)).classList.add('pledge-card__radio-btn--selected');
-        let screen = window.matchMedia('(max-width: 340px)');
+        // Create a MediaQueryList object
+        let screen = window.matchMedia('(max-width: 1439px)');
         if (screen.matches) {
             // If media query matches
-            document.querySelector('#confirm' + card.id.slice(-1)).style.height = '215px';
+            document.querySelector('#confirm' + card.id.slice(-1)).style.height = '150px';
         } else {
-            document.querySelector('#confirm' + card.id.slice(-1)).style.height = '148px';
+            document.querySelector('#confirm' + card.id.slice(-1)).style.height = '108px';
         }
-    };
-});
-
-// continue button function
-const continueBtns = document.querySelectorAll('.confirm__continue-btn');
-continueBtns.forEach((btn) => {
-    btn.onclick = () => {
-        // close the back-project menu
-        document.querySelector('.back-project').style.display = 'none';
-        // open thank you message
-        document.querySelector('.thank-you-message').style.display = 'block';
+        // add no scroll too homepage
+        pageWrapperFunction();
     };
 });

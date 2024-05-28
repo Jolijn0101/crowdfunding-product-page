@@ -55,6 +55,7 @@
 .menu-card__card {
     transform: translateY(120px);
     width: calc(100% - 3rem);
+    max-width: 750px;
     padding: 2rem 1.5rem 1rem 1.5rem;
     background-color: #ffffff;
     margin: auto;
@@ -63,15 +64,27 @@
     position: relative;
 }
 
+@media (min-width: 1440px) {
+    .menu-card__card {
+        padding: 3rem;
+    }
+}
+
 /*** back this project ***/
 .back-project__close-icon {
     position: absolute;
     right: 22px;
     top: 35px;
+    cursor: pointer;
 }
 .back-project__title {
     font-size: 18px;
     margin-bottom: 26px;
+}
+@media (min-width: 1440px) {
+    .back-project__title {
+        font-size: 25px;
+    }
 }
 .back-project__intro {
     line-height: 23px;
@@ -83,12 +96,22 @@
     padding-bottom: 32px;
     margin-bottom: 20px;
 }
+@media (min-width: 1440px) {
+    .pledge-card {
+        position: relative;
+    }
+}
 .pledge-card__header {
     display: flex;
     align-items: center;
     gap: 15px;
     margin-bottom: 35px;
     padding: 32px 22px 0 22px;
+}
+@media (min-width: 1440px) {
+    .pledge-card__header {
+        margin-bottom: 15px;
+    }
 }
 .page-top-header--min-height {
     margin-top: -10px;
@@ -108,6 +131,16 @@
     border-radius: 50%;
     transform: translate(5px, 5px);
 }
+@media (min-width: 1440px) {
+    .pledge-card__title-wrapper {
+        display: flex;
+        gap: 2rem;
+        transition: 0.5s;
+    }
+    .pledge-card__title-wrapper:hover {
+        color: var(--Moderate-cyan);
+    }
+}
 .pledge-card__title {
     font-size: 14px;
 }
@@ -117,9 +150,19 @@
     font-size: 14px;
     margin-top: 8px;
 }
+@media (min-width: 1440px) {
+    .pledge-card__subtitle {
+        margin-top: 0;
+    }
+}
 .pledge-card__description {
     line-height: 24px;
     padding: 0 22px;
+}
+@media (min-width: 1440px) {
+    .pledge-card__description {
+        padding: 0 22px 0 60px;
+    }
 }
 .pledge-card__product-counter {
     display: flex;
@@ -127,6 +170,13 @@
     margin-top: 1.5rem;
     align-items: center;
     padding: 0 22px;
+}
+@media (min-width: 1440px) {
+    .pledge-card__product-counter {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
 }
 .pledge-card__number {
     font-weight: 700;
@@ -143,6 +193,14 @@
     overflow: hidden;
     transition: 0.5s;
 }
+@media (min-width: 1440px) {
+    .confirm__wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 2rem;
+    }
+}
 .confirm__hr {
     margin: 1.5rem 0;
     border-width: 2px;
@@ -151,6 +209,11 @@
 }
 .confirm__title {
     margin-bottom: 1.5rem;
+}
+@media (min-width: 1440px) {
+    .confirm__title {
+        margin-bottom: 0;
+    }
 }
 .confirm__action-box {
     display: flex;
@@ -169,19 +232,23 @@
 .confirm__input-num-container {
     display: flex;
     align-items: center;
-    padding: 18px 1.5rem;
-    border-radius: 2rem;
-    border: 1px solid rgb(172, 172, 172);
+    position: relative;
 }
 .confirm__input-num {
-    border: none;
+    padding: 18px 1rem 18px 2.5rem;
+    border-radius: 2rem;
+    border: 1px solid rgb(172, 172, 172);
+    width: 100px;
     outline: none;
     font-family: 'Commissioner', sans-serif;
     font-weight: 700;
-    width: 50px;
-    padding-left: 0.5rem;
+}
+.confirm__input-num:focus {
+    border-color: var(--Dark-cyan);
 }
 .confirm__dollar-sign {
+    position: absolute;
+    left: 1.5rem;
     font-weight: 700;
     font-family: 'Commissioner', sans-serif;
     color: rgb(172, 172, 172);
@@ -191,9 +258,20 @@
 .thank-you-message__card {
     text-align: center;
 }
+@media (min-width: 1440px) {
+    .thank-you-message__card {
+        width: 500px;
+        padding-bottom: 1rem;
+    }
+}
 .thank-you-message__title {
     margin: 1rem 0 1.5rem 0;
     font-size: 18px;
+}
+@media (min-width: 1440px) {
+    .thank-you-message__title {
+        font-size: 22px;
+    }
 }
 .thank-you-message__description {
     line-height: 25px;
