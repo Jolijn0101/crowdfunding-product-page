@@ -21,7 +21,7 @@ p {
 /*** Buttons ***/
 .btn-primary {
     cursor: pointer;
-    padding: 18px 45px;
+    padding: 1.125rem 2.8125rem;
     background-color: var(--Moderate-cyan);
     color: #ffffff;
     font-size: 1rem;
@@ -33,12 +33,12 @@ p {
 }
 
 .btn-primary--small {
-    font-size: 14px;
-    padding: 15px 33px;
+    font-size: 0.875rem;
+    padding: 1rem 2.125rem;
 }
 
 .btn-primary--compressed {
-    padding: 18px 30px;
+    padding: 1.125rem 1.875rem;
 }
 
 .btn-primary:hover {
@@ -77,8 +77,8 @@ p {
 
 /* hamburger icon */
 .menu-icon {
-    width: 16px;
-    height: 15px;
+    width: 1rem;
+    height: 1rem;
     position: relative;
     margin-top: 3px;
 }
@@ -133,7 +133,7 @@ p {
         list-style: none;
     }
     .large-screen-menu__item:hover {
-        height: 20px;
+        height: 1.25rem;
         border-bottom: 2px solid #ffffff45;
     }
 }
@@ -159,7 +159,7 @@ p {
 /*** section card ***/
 .section-card {
     width: calc(100% - 3rem);
-    max-width: 750px;
+    max-width: 46.875rem;
     margin: auto;
     background-color: #ffffff;
     border-radius: 0.5rem;
@@ -195,7 +195,7 @@ p {
 
 @media (min-width: 1440px) {
     .intro-card__title {
-        font-size: 25px;
+        font-size: 1.5625rem;
         width: 100%;
     }
 }
@@ -226,13 +226,13 @@ p {
 
 @media (max-width: 365px) {
     .BackProjectBtn {
-        padding: 18px 25px;
+        padding: 1.125rem 1.5625rem;
     }
 }
 
 .btn-bookmark {
     cursor: pointer;
-    height: 56px;
+    height: 3.5rem;
     background-color: #2f2f2fff;
     border-radius: 50%;
     border: none;
@@ -257,7 +257,7 @@ p {
         z-index: -100;
         left: 2.5rem;
         top: 0;
-        height: 56px;
+        height: 3.5rem;
         display: flex;
         align-items: center;
         padding: 1rem 1.5rem 1rem 2rem;
@@ -277,7 +277,7 @@ p {
     .stats-card__num-container {
         display: flex;
         justify-content: left;
-        padding: 52.5px 0px 30px 0px;
+        padding: 3.3125rem 0rem 1.875rem 0rem;
     }
 }
 .stats-card__stat-wrapper {
@@ -298,7 +298,7 @@ p {
     .stats-card__stat-wrapper {
         border-bottom: 0px;
         border-right: 1px solid rgb(206, 204, 204);
-        padding: 0rem 52.5px;
+        padding: 0rem 3.28125rem;
         margin: 0;
         text-align: left;
     }
@@ -311,7 +311,7 @@ p {
 }
 
 .stats-card__description {
-    font-size: 14px;
+    font-size: 0.875rem;
     padding-bottom: 1.5625rem;
 }
 
@@ -337,21 +337,21 @@ p {
 }
 .stats-card__progress-bar-bg {
     width: 100%;
-    height: 12px;
+    height: 0.75rem;
     border-radius: 1rem;
     background-color: var(--Light-gray);
 }
 .stats-card__progress-bar {
     position: absolute;
     width: 89.929%;
-    height: 12px;
+    height: 0.75rem;
     border-radius: 1rem;
     background-color: var(--Moderate-cyan);
 }
 
 /*** about card ***/
 .about-card {
-    margin: 1.5rem auto 77px auto;
+    margin: 1.5rem auto 4.8125rem auto;
     padding: 2.5rem 1.5rem;
 }
 
@@ -395,20 +395,20 @@ p {
 }
 
 .adds-card__title {
-    font-size: 14px;
-    margin-bottom: 8px;
+    font-size: 0.875rem;
+    margin-bottom: 0.5rem;
 }
 
 .adds-card__subtitle {
     color: var(--Dark-cyan);
-    font-size: 14px;
+    font-size: 0.875rem;
     font-weight: 400;
-    margin-bottom: 26px;
+    margin-bottom: 1.625rem;
 }
 
 .adds-card__text {
-    line-height: 24px;
-    margin-bottom: 22px;
+    line-height: 1.5rem;
+    margin-bottom: 1.375rem;
 }
 
 .adds-card__product-counter {
@@ -427,7 +427,7 @@ p {
     font-size: 2rem;
     font-weight: 700;
     color: var(--Black);
-    margin-right: 8px;
+    margin-right: 0.5rem;
 }
 
 .adds-card-btn--sold-out:hover {

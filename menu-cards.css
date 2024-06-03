@@ -27,13 +27,13 @@
 }
 
 .mobile-menu__card--open {
-    height: 212px;
+    height: 13.25rem;
 }
 
 .mobile-menu__item {
     padding: 1.5rem 1.5rem;
     border-bottom: 1px solid var(--Light-gray);
-    font-size: 18px;
+    font-size: 1.125rem;
     font-weight: 500;
 }
 
@@ -49,7 +49,7 @@
     position: fixed;
     overflow: scroll;
     z-index: 300;
-    padding-bottom: 250px;
+    padding-bottom: 15.625rem;
     display: none;
 }
 .menu-card__card {
@@ -73,28 +73,28 @@
 /*** back this project ***/
 .back-project__close-icon {
     position: absolute;
-    right: 22px;
-    top: 35px;
+    right: 1.375rem;
+    top: 2.1875rem;
     cursor: pointer;
 }
 .back-project__title {
-    font-size: 18px;
-    margin-bottom: 26px;
+    font-size: 1.125rem;
+    margin-bottom: 1.625rem;
 }
 @media (min-width: 1440px) {
     .back-project__title {
-        font-size: 25px;
+        font-size: 1.5625rem;
     }
 }
 .back-project__intro {
-    line-height: 23px;
+    line-height: 1.4375rem;
     margin-bottom: 1.5rem;
 }
 .pledge-card {
     border: 1px solid #d8d8d8;
     border-radius: 0.5rem;
-    padding-bottom: 32px;
-    margin-bottom: 20px;
+    padding-bottom: 2rem;
+    margin-bottom: 1.25rem;
 }
 @media (min-width: 1440px) {
     .pledge-card {
@@ -104,13 +104,13 @@
 .pledge-card__header {
     display: flex;
     align-items: center;
-    gap: 15px;
-    margin-bottom: 35px;
-    padding: 32px 22px 0 22px;
+    gap: 1rem;
+    margin-bottom: 2.1875rem;
+    padding: 2rem 1.375rem 0 1.375rem;
 }
 @media (min-width: 1440px) {
     .pledge-card__header {
-        margin-bottom: 15px;
+        margin-bottom: 1rem;
     }
 }
 .page-top-header--min-height {
@@ -142,13 +142,13 @@
     }
 }
 .pledge-card__title {
-    font-size: 14px;
+    font-size: 0.875rem;
 }
 .pledge-card__subtitle {
     font-weight: 400;
     color: var(--Moderate-cyan);
-    font-size: 14px;
-    margin-top: 8px;
+    font-size: 0.875rem;
+    margin-top: 0.5rem;
 }
 @media (min-width: 1440px) {
     .pledge-card__subtitle {
@@ -156,20 +156,20 @@
     }
 }
 .pledge-card__description {
-    line-height: 24px;
-    padding: 0 22px;
+    line-height: 1.5rem;
+    padding: 0 1.375rem;
 }
 @media (min-width: 1440px) {
     .pledge-card__description {
-        padding: 0 22px 0 60px;
+        padding: 0 1.375rem 0 3.75rem;
     }
 }
 .pledge-card__product-counter {
     display: flex;
-    gap: 8px;
+    gap: 0.5rem;
     margin-top: 1.5rem;
     align-items: center;
-    padding: 0 22px;
+    padding: 0 1.375rem;
 }
 @media (min-width: 1440px) {
     .pledge-card__product-counter {
@@ -181,7 +181,7 @@
 .pledge-card__number {
     font-weight: 700;
     color: var(--Black);
-    font-size: 16px;
+    font-size: 1rem;
 }
 .pledge-card--sold-out {
     opacity: 0.5;
@@ -242,10 +242,10 @@
     position: relative;
 }
 .confirm__input-num {
-    padding: 18px 1rem 18px 2.5rem;
+    padding: 1.125rem 1rem 1.125rem 2.5rem;
     border-radius: 2rem;
     border: 1px solid rgb(172, 172, 172);
-    width: 100px;
+    width: 6.25rem;
     outline: none;
     font-family: 'Commissioner', sans-serif;
     font-weight: 700;
@@ -267,21 +267,21 @@
 }
 @media (min-width: 1440px) {
     .thank-you-message__card {
-        width: 500px;
+        width: 31.25rem;
         padding-bottom: 1rem;
     }
 }
 .thank-you-message__title {
     margin: 1rem 0 1.5rem 0;
-    font-size: 18px;
+    font-size: 1.125rem;
 }
 @media (min-width: 1440px) {
     .thank-you-message__title {
-        font-size: 22px;
+        font-size: 1.375rem;
     }
 }
 .thank-you-message__description {
-    line-height: 25px;
+    line-height: 1.5625rem;
 }
 .thank-you-message__btn {
     margin: 1.5rem 0;

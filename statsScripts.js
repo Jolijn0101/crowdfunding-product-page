@@ -46,7 +46,6 @@ continueBtns.forEach((btn) => {
                 document.getElementById('adds-card__number' + idNum).innerHTML = totalProducts;
 
                 // if there are no products left mark advertisement as sold
-                console.log(totalProducts);
                 if (totalProducts == 0) {
                     // addscard
                     document.getElementById('adds-card' + idNum).classList.add('adds-card--sold-out');
