@@ -44,6 +44,11 @@ function addPledge(card) {
             return;
         }
 
+        // if the continue btn was clicked, exit function
+        if (e.target.classList.contains('confirm__continue-btn')) {
+            return;
+        }
+
         // if the input for the pledge amount was clicked, exit function
         if (e.target.classList.contains('confirm__input-num') || e.target.classList.contains('confirm__input-num-container')) {
             return;
@@ -54,7 +59,8 @@ function addPledge(card) {
             card.classList.remove('pledge-card--selected');
             card.style.borderColor = '#d8d8d8';
             document.querySelector('#pledge-card__radio-btn' + idNum).classList.remove('pledge-card__radio-btn--selected');
-            document.querySelector('#confirm' + idNum).style.height = '0px';
+            document.querySelector('.confirm').style.transition = 'transition: max-height 0.2s ease-in;';
+            document.querySelector('#confirm' + idNum).style.maxHeight = '0px';
             return;
         }
 
@@ -65,7 +71,8 @@ function addPledge(card) {
                 x.classList.remove('pledge-card--selected');
                 x.style.borderColor = '#d8d8d8';
                 document.querySelector('#pledge-card__radio-btn' + xidNum).classList.remove('pledge-card__radio-btn--selected');
-                document.querySelector('#confirm' + xidNum).style.height = '0px';
+                document.querySelector('.confirm').style.transition = 'transition: max-height 0.2s ease-in;';
+                document.querySelector('#confirm' + xidNum).style.maxHeight = '0px';
             }
         });
 
@@ -73,14 +80,7 @@ function addPledge(card) {
         card.classList.add('pledge-card--selected');
         card.style.borderColor = 'hsl(176, 50%, 47%)';
         document.querySelector('#pledge-card__radio-btn' + idNum).classList.add('pledge-card__radio-btn--selected');
-        // Create a MediaQueryList object
-        let screen = window.matchMedia('(max-width: 1439px)');
-        if (screen.matches) {
-            // If media query matches
-            document.querySelector('#confirm' + idNum).style.height = '150px';
-        } else {
-            document.querySelector('#confirm' + idNum).style.height = '108px';
-        }
+        document.querySelector('#confirm' + idNum).style.maxHeight = '500px';
     };
 }
 
@@ -107,21 +107,13 @@ CloseBackProjectBtn.onclick = () => {
     pageWrapperFunction();
 };
 
-// close thank you for your support
-const CloseThanksSupport = document.querySelector('.thank-you-message__btn');
-CloseThanksSupport.onclick = () => {
-    document.querySelector('.thank-you-message').style.display = 'none';
-    // remove no scroll from homepage
-    pageWrapperFunction();
-};
-
 // select reward function
 const selectButtons = document.querySelectorAll('.select-reward-btn');
 selectButtons.forEach((selectBtn) => {
     selectBtn.onclick = () => {
         const card = document.getElementById(selectBtn.id.slice(5));
         // if offer isn't available break out of function
-        if (card.classList.contains('pledge-card--sold-out')) {
+        if (selectBtn.innerHTML === 'Out of Stock') {
             return;
         }
         // open menu
@@ -130,14 +122,8 @@ selectButtons.forEach((selectBtn) => {
         card.classList.add('pledge-card--selected');
         card.style.borderColor = 'hsl(176, 50%, 47%)';
         document.querySelector('#pledge-card__radio-btn' + card.id.slice(-1)).classList.add('pledge-card__radio-btn--selected');
-        // Create a MediaQueryList object
-        let screen = window.matchMedia('(max-width: 1439px)');
-        if (screen.matches) {
-            // If media query matches
-            document.querySelector('#confirm' + card.id.slice(-1)).style.height = '150px';
-        } else {
-            document.querySelector('#confirm' + card.id.slice(-1)).style.height = '108px';
-        }
+        document.querySelector('#confirm' + card.id.slice(-1)).style.maxHeight = '500px';
+
         // add no scroll too homepage
         pageWrapperFunction();
     };

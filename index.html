@@ -46,12 +46,13 @@
                     </p>
                     <div class="confirm" id="confirm1">
                         <hr class="confirm__hr" />
-                        <div class="confirm__wrapper">
+                        <p class="error-message" id="error-message1">The amount is to low it should be more then $15</p>
+                        <div class="confirm__wrapper" id="confirm_wrapper1">
                             <p class="confirm__title">Enter your pledge</p>
                             <div class="confirm__action-box">
                                 <div class="confirm__input-num-container">
                                     <p class="confirm__dollar-sign">$</p>
-                                    <input class="confirm__input-num" id="confirm__input-num1" type="number" value="15" />
+                                    <input class="confirm__input-num" id="confirm__input-num1" data-min-value="15" type="number" value="15" />
                                 </div>
                                 <button class="btn-primary btn-primary--compressed confirm__continue-btn" id="confirm__continue-btn1">Continue</button>
                             </div>
@@ -71,17 +72,18 @@
                         Backer member list.
                     </p>
                     <div class="pledge-card__product-counter">
-                        <p class="pledge-card__number">101</p>
+                        <p class="pledge-card__number" id="pledge-card__number2">101</p>
                         <p class="pledge-card__products-left">left</p>
                     </div>
                     <div class="confirm" id="confirm2">
                         <hr class="confirm__hr" />
+                        <p class="error-message" id="error-message2">The amount is to low it should be more then $25</p>
                         <div class="confirm__wrapper">
                             <p class="confirm__title">Enter your pledge</p>
                             <div class="confirm__action-box">
                                 <div class="confirm__input-num-container">
                                     <p class="confirm__dollar-sign">$</p>
-                                    <input class="confirm__input-num" id="confirm__input-num2" type="number" value="25" />
+                                    <input class="confirm__input-num" id="confirm__input-num2" type="number" data-min-value="25" value="25" />
                                 </div>
                                 <button class="btn-primary btn-primary--compressed confirm__continue-btn" id="confirm__continue-btn2">Continue</button>
                             </div>
@@ -101,17 +103,18 @@
                         included.
                     </p>
                     <div class="pledge-card__product-counter">
-                        <p class="pledge-card__number">64</p>
+                        <p class="pledge-card__number" id="pledge-card__number3">64</p>
                         <p class="pledge-card__products-left">left</p>
                     </div>
                     <div class="confirm" id="confirm3">
                         <hr class="confirm__hr" />
+                        <p class="error-message" id="error-message3">The amount is to low it should be more then $75</p>
                         <div class="confirm__wrapper">
                             <p class="confirm__title">Enter your pledge</p>
                             <div class="confirm__action-box">
                                 <div class="confirm__input-num-container">
                                     <p class="confirm__dollar-sign">$</p>
-                                    <input class="confirm__input-num" id="confirm__input-num3" type="number" value="75" />
+                                    <input class="confirm__input-num" id="confirm__input-num3" type="number" data-min-value="75" value="75" />
                                 </div>
                                 <button class="btn-primary btn-primary--compressed confirm__continue-btn" id="confirm__continue-btn3">Continue</button>
                             </div>
@@ -131,17 +134,18 @@
                         Shipping is included.
                     </p>
                     <div class="pledge-card__product-counter">
-                        <p class="pledge-card__number">0</p>
+                        <p class="pledge-card__number" id="pledge-card__number4">0</p>
                         <p class="pledge-card__products-left">left</p>
                     </div>
                     <div class="confirm" id="confirm4">
                         <hr class="confirm__hr" />
+                        <p class="error-message" id="error-message4">The amount is to low it should be more then $200</p>
                         <div class="confirm__wrapper">
                             <p class="confirm__title">Enter your pledge</p>
                             <div class="confirm__action-box">
                                 <div class="confirm__input-num-container">
                                     <p class="confirm__dollar-sign">$</p>
-                                    <input class="confirm__input-num" id="confirm__input-num4" type="number" value="200" />
+                                    <input class="confirm__input-num" id="confirm__input-num4" type="number" data-min-value="200" value="200" />
                                 </div>
                                 <button class="btn-primary btn-primary--compressed confirm__continue-btn" id="confirm__continue-btn4">Continue</button>
                             </div>
@@ -214,16 +218,17 @@
                         <p class="stats-card__description">of $100,000 backed</p>
                     </div>
                     <div class="stats-card__stat-wrapper">
-                        <h2 class="stats-card__number">5,007</h2>
+                        <h2 class="stats-card__number" id="backers-amount">5,007</h2>
                         <p class="stats-card__description">total backers</p>
                     </div>
                     <div class="stats-card__stat-wrapper">
-                        <h2 class="stats-card__number">56</h2>
+                        <h2 class="stats-card__number" id="countdownNum">56</h2>
                         <p class="stats-card__description">days left</p>
                     </div>
                 </div>
                 <div class="stats-card__progress-bar-container">
                     <div class="stats-card__progress-bar"></div>
+                    <div class="stats-card__progress-bar-bg"></div>
                 </div>
             </section>
             <section class="section-card about-card">
@@ -236,7 +241,7 @@
                     sticks to be stored under the stand.
                 </p>
                 <!-- begin adds cards -->
-                <div class="adds-card">
+                <div class="adds-card" id="adds-card2">
                     <header class="adds-card__header">
                         <h4 class="adds-card__title">Bamboo Stand</h4>
                         <h5 class="adds-card__subtitle">Pledge $25 or more</h5>
@@ -246,12 +251,12 @@
                         Backer member list.
                     </p>
                     <div class="adds-card__product-counter">
-                        <p class="adds-card__number">101</p>
+                        <p class="adds-card__number" id="adds-card__number2">101</p>
                         <p class="adds-card__products-left">left</p>
                     </div>
                     <a href="#pledge-card2"><button class="btn-primary btn-primary--small select-reward-btn" id="link-pledge-card2">Select Reward</button></a>
                 </div>
-                <div class="adds-card">
+                <div class="adds-card" id="adds-card3">
                     <header class="adds-card__header">
                         <h4 class="adds-card__title">Black Edition Stand</h4>
                         <h5 class="adds-card__subtitle">Pledge $75 or more</h5>
@@ -261,12 +266,12 @@
                         included.
                     </p>
                     <div class="adds-card__product-counter">
-                        <p class="adds-card__number">64</p>
+                        <p class="adds-card__number" id="adds-card__number3">64</p>
                         <p class="adds-card__products-left">left</p>
                     </div>
                     <a href="#pledge-card3"><button id="link-pledge-card3" class="btn-primary btn-primary--small select-reward-btn">Select Reward</button></a>
                 </div>
-                <div class="adds-card">
+                <div class="adds-card adds-card--sold-out" id="adds-card4">
                     <header class="adds-card__header">
                         <h4 class="adds-card__title">Mahogany Special Edition</h4>
                         <h5 class="adds-card__subtitle">Pledge $200 or more</h5>
@@ -276,7 +281,7 @@
                         Shipping is included.
                     </p>
                     <div class="adds-card__product-counter">
-                        <p class="adds-card__number">0</p>
+                        <p class="adds-card__number" id="adds-card__number3">0</p>
                         <p class="adds-card__products-left">left</p>
                     </div>
                     <a href="#pledge-card4"
@@ -287,5 +292,7 @@
                 </div>
             </section>
         </div>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/dayjs/1.11.11/dayjs.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/dayjs/1.11.11/plugin/duration.min.js"></script>
     </body>
 </html>

@@ -325,6 +325,7 @@ p {
     padding-bottom: 0.5rem;
 }
 .stats-card__progress-bar-container {
+    position: relative;
     padding-bottom: 2.5rem;
     width: 86%;
     margin: 0.625rem auto 0rem auto;
@@ -334,16 +335,15 @@ p {
         padding-bottom: 3rem;
     }
 }
-.stats-card__progress-bar {
+.stats-card__progress-bar-bg {
     width: 100%;
     height: 12px;
     border-radius: 1rem;
     background-color: var(--Light-gray);
 }
-.stats-card__progress-bar:before {
-    content: '';
-    display: block;
-    width: 77%;
+.stats-card__progress-bar {
+    position: absolute;
+    width: 89.929%;
     height: 12px;
     border-radius: 1rem;
     background-color: var(--Moderate-cyan);
@@ -388,6 +388,9 @@ p {
 }
 .adds-card:last-of-type {
     margin-bottom: 0rem;
+}
+
+.adds-card--sold-out {
     opacity: 0.5;
 }
 

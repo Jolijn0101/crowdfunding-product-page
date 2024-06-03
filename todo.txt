@@ -1,12 +1,6 @@
 alle rems zonder halve px??
 px naar rems zetten
 
-zorg dat alle pledges berekent worden
-1   totaal in euro's backed 
-    aantal euro's backed indicator
-2   aantal backers
-3   aantal dagen nog te gaan 
-
 read me maken
 
 github posten
