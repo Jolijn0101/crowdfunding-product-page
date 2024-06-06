@@ -30,6 +30,30 @@ bookmarkIcon.onclick = () => {
     }
 };
 
+// open Back this project
+const OpenBackProjectBtn = document.querySelector('.BackProjectBtn');
+OpenBackProjectBtn.onclick = () => {
+    document.querySelector('.back-project').style.display = 'block';
+    // add no scroll too homepage
+    pageWrapperFunction();
+};
+
+// close Back this project
+const CloseBackProjectBtn = document.querySelector('.back-project__close-icon');
+CloseBackProjectBtn.onclick = () => {
+    // remove all selected classes from pledge cards
+    pledgeCard.forEach((card) => {
+        card.classList.remove('pledge-card--selected');
+        card.style.borderColor = '#d8d8d8';
+        document.querySelector('#pledge-card__radio-btn' + card.id.slice(-1)).classList.remove('pledge-card__radio-btn--selected');
+        document.querySelector('#confirm' + card.id.slice(-1)).style.maxHeight = '0px';
+    });
+    // remove no scroll from homepage
+    pageWrapperFunction();
+
+    document.querySelector('.back-project').style.display = 'none';
+};
+
 // pledge-card function
 const pledgeCard = document.querySelectorAll('.pledge-card');
 
@@ -38,7 +62,6 @@ pledgeCard.forEach(addPledge);
 function addPledge(card) {
     card.onclick = function (e) {
         const idNum = card.id.slice(-1);
-
         // if the product is out of stock exit function
         if (card.classList.contains('pledge-card--sold-out')) {
             return;
@@ -83,29 +106,6 @@ function addPledge(card) {
         document.querySelector('#confirm' + idNum).style.maxHeight = '500px';
     };
 }
-
-// open Back this project
-const OpenBackProjectBtn = document.querySelector('.BackProjectBtn');
-OpenBackProjectBtn.onclick = () => {
-    document.querySelector('.back-project').style.display = 'block';
-    // add no scroll too homepage
-    pageWrapperFunction();
-};
-
-// close Back this project
-const CloseBackProjectBtn = document.querySelector('.back-project__close-icon');
-CloseBackProjectBtn.onclick = () => {
-    document.querySelector('.back-project').style.display = 'none';
-    // remove all selected classes from pledge cards
-    pledgeCard.forEach((card) => {
-        card.classList.remove('pledge-card--selected');
-        card.style.borderColor = '#d8d8d8';
-        document.querySelector('#pledge-card__radio-btn' + card.id.slice(-1)).classList.remove('pledge-card__radio-btn--selected');
-        document.querySelector('#confirm' + card.id.slice(-1)).style.height = '0px';
-    });
-    // remove no scroll from homepage
-    pageWrapperFunction();
-};
 
 // select reward function
 const selectButtons = document.querySelectorAll('.select-reward-btn');

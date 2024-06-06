@@ -135,6 +135,7 @@ p {
     .large-screen-menu__item:hover {
         height: 1.25rem;
         border-bottom: 2px solid #ffffff45;
+        cursor: pointer;
     }
 }
 

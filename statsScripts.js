@@ -17,7 +17,7 @@ continueBtns.forEach((btn) => {
             card.classList.remove('pledge-card--selected');
             card.style.borderColor = '#d8d8d8';
             document.querySelector('#pledge-card__radio-btn' + idNum).classList.remove('pledge-card__radio-btn--selected');
-            document.querySelector('#confirm' + idNum).style.height = '0px';
+            document.querySelector('#confirm' + idNum).style.maxHeight = '0px';
 
             // remove any error message in case needed
             document.getElementById('confirm__input-num' + idNum).style.borderColor = 'rgb(172, 172, 172)';
@@ -40,11 +40,14 @@ continueBtns.forEach((btn) => {
                 animationBackedAmountString(counter, backedAmount, amount, animationProgressBar);
 
                 // remove one product from the total products left in the advertisements
-                let totalProducts = document.getElementById('pledge-card__number' + idNum).innerHTML;
-                totalProducts = Number(totalProducts) - 1;
-                document.getElementById('pledge-card__number' + idNum).innerHTML = totalProducts;
-                document.getElementById('adds-card__number' + idNum).innerHTML = totalProducts;
+                const totalProductsElement = document.getElementById('pledge-card__number' + idNum);
+                let totalProducts = totalProductsElement ? document.getElementById('pledge-card__number' + idNum).innerHTML : null;
 
+                if (idNum !== '1') {
+                    totalProducts = Number(totalProducts) - 1;
+                    document.getElementById('pledge-card__number' + idNum).innerHTML = totalProducts;
+                    document.getElementById('adds-card__number' + idNum).innerHTML = totalProducts;
+                }
                 // if there are no products left mark advertisement as sold
                 if (totalProducts == 0) {
                     // addscard
