@@ -12,6 +12,7 @@ menuIcon.onclick = () => {
     menuIcon.classList.toggle('openmenu');
     mobileMenu.classList.toggle('mobile-menu--open');
     menuCard.classList.toggle('mobile-menu__card--open');
+    pageWrapperFunction();
 };
 
 // Bookmark function

@@ -47,12 +47,11 @@ p {
 
 /*** page wrapper ***/
 .page-wrapper {
-    height: 100vh;
-    overflow: scroll;
     position: relative;
 }
 
 .page-wrapper--no-scroll {
+    height: 100vh;
     overflow: hidden;
 }
 
