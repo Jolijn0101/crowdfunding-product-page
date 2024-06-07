@@ -159,7 +159,7 @@ function updateDOMBacker() {
 }
 
 // amount of days checker
-dayjs.extend(dayjs_plugin_duration);
+/*dayjs.extend(dayjs_plugin_duration);
 
 function activateCountdown(element, dateString) {
     const targetDate = dayjs(dateString);
@@ -168,4 +168,4 @@ function activateCountdown(element, dateString) {
     element.innerHTML = Math.floor(duration.asDays());
 }
 
-activateCountdown(document.getElementById('countdownNum'), '2024-07-27');
+activateCountdown(document.getElementById('countdownNum'), '2024-07-27');*/

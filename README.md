@@ -4,7 +4,7 @@ I coded this Crowdfunding page myself and the idea and design of the page came f
 
 ## The challenge
 
-The challenge was to create a crowdfunding product page that looks as close as possible to the design screenshots they had given. The page should be watched on a wide range of different screen sizes. The hover states should work as seen in the screenshots. The visitors could place a pledge and after that the backed amount, progress bar and the total backers should be updated. The bookmark button should be working too. As an extra item I made the countdown of the days work.
+The challenge was to create a crowdfunding product page that looks as close as possible to the design screenshots they had given. The page should be watched on a wide range of different screen sizes. The hover states should work as seen in the screenshots. The visitors could place a pledge and after that the backed amount, progress bar and the total backers should be updated. The bookmark button should be working too. As an extra item I made the countdown of the days work but commented it out later on.
 
 ## Screenshots
 
@@ -30,7 +30,7 @@ The challenge was to create a crowdfunding product page that looks as close as p
 
 ## My experience
 
-I learned a lot from this project. I tried the BEM naming convention out for css. The functions for opening en closing the different pop up menu's were a bit of a challenge. Writing them was not a problem but the way I wrote them was with a lot of repeated code. Afterwards I needed to change something in the code. That made it hard to change it. I will do that different in the future. 
+I learned a lot from this project. I tried the BEM naming convention out for css. The functions for opening en closing the different pop up menu's were a bit of a challenge. Writing them was not a problem but the way I wrote them was with a lot of repeated code. Afterwards I needed to change something in the code. That made it hard to change it. I will do that different in the future.
 
 ### Links
 

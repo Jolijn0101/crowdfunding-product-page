@@ -18,6 +18,11 @@ p {
     font-size: 0.875rem;
 }
 
+a {
+    color: white;
+    text-decoration: none;
+}
+
 /*** Buttons ***/
 .btn-primary {
     cursor: pointer;
